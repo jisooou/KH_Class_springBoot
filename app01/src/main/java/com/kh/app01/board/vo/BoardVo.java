@@ -1,6 +1,6 @@
-package com.kh.app.board.vo;
+package com.kh.app01.board.vo;
 
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class BoardVo {

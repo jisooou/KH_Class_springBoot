@@ -1,4 +1,4 @@
-package com.kh.app.board.vo;
+package com.kh.app02.board.vo;
 
 import lombok.Data;
 
