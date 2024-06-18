@@ -3,7 +3,6 @@ package com.kh.app04.board.controller;
 import com.kh.app04.board.service.BoardService;
 import com.kh.app04.board.vo.BoardVo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

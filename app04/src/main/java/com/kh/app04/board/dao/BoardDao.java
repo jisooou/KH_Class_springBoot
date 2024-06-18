@@ -4,6 +4,7 @@ import com.kh.app04.board.mapper.BoardMapper;
 import com.kh.app04.board.vo.BoardVo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;

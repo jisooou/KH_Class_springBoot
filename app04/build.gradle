@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'javax.servlet:jstl:1.2'
 	implementation 'com.oracle.database.jdbc:ojdbc11:23.4.0.24.05'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'

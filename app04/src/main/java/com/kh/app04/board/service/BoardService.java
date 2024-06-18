@@ -4,12 +4,14 @@ import com.kh.app04.board.dao.BoardDao;
 import com.kh.app04.board.vo.BoardVo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class BoardService {
 
     private final BoardDao dao;
