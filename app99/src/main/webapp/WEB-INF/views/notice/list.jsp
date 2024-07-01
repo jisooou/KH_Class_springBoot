@@ -21,9 +21,41 @@
           </tr>
       </thead>
       <tbody>
-          
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
       </tbody>
    </table>
 
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  
+  $.ajax({
+      url: "http://127.0.0.1:8080/api/notice/list",
+      method: "get", 
+      data: {},
+      success: function(x){
+        const voList = x;
+
+        const tbody = document.querySelector("tbody");
+        let str = "";
+        for (let i = 0; i< voList.length; i++) {
+          str += "<tr>";
+          str += "<td>" + voList[i].no + "</td>";
+          str += "<td>" + voList[i].title + "</td>";
+          str += "<td>" + voList[i].hit + "</td>";
+          str += "</tr>";
+        }
+        tbody.innerHTML = str;
+        },
+    })
+
+    
+</script>
+

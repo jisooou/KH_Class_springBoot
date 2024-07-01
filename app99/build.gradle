@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 	implementation 'com.google.code.gson:gson:2.11.0'
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	//implementation 'javax.servlet:jstl' //스프링부트 3.0 미만
